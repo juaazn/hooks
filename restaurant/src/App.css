@@ -3,6 +3,7 @@
   height: auto;
   margin: 0 auto;
   display: flex;
+  padding: 2rem 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -17,7 +18,6 @@ picture {
 
 .logo {
   height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -44,4 +44,20 @@ picture {
   width: 80%;
   height: auto;
   margin: 0 auto;
+}
+
+.card {
+  width: 15rem;
+  height: 12rem;
+  background-color: #f0f8ff;
+  color: #202020;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.flex_card {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
 }
