@@ -21,12 +21,18 @@ export default function Card () {
   ]  
 
   return (
-    <>
-      <article>
-        <h2>Name</h2>
-        <p>descripción</p>
-        <strong>Price</strong>
-      </article>
-    </>
+    <article className='flex_card' >
+      {
+        dishes.map((item) => {
+          return (
+            <section className='card' key={item.id}>
+              <h2>{item.name}</h2>
+              <p>{item.description}</p>
+              <strong>{item.price}</strong>
+            </section>
+          )
+        })
+      }
+    </article>
   )
 }
